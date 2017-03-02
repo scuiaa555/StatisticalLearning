@@ -16,10 +16,19 @@ X_train_std = sc.transform(X_train)
 X_test_std = sc.transform(X_test)
 
 from sklearn.linear_model import Perceptron
+from sklearn.multiclass import OneVsOneClassifier
+from sklearn.multiclass import OneVsRestClassifier
 
-ppn = Perceptron(eta0=0.1, random_state=0, n_iter=40)
+ppn = OneVsOneClassifier(Perceptron(eta0=0.1, random_state=0, n_iter=40))
+ppn2 = OneVsRestClassifier(Perceptron(eta0=0.1, random_state=0, n_iter=40))
 ppn.fit(X_train_std, y_train)
+ppn2.fit(X_train_std, y_train)
 y_pred = ppn.predict(X_test_std)
-print (y_test != y_pred)
+y_pred2 = ppn2.predict(X_test_std)
+print (y_test != y_pred2).sum()
+print (y_test != y_pred).sum()
+
+# import matplotlib.pyplot as plt
+# plt.scatter(X_train_std[:,0],X_train_std[:,1],color='red')
 
 aaaa = 0
