@@ -31,7 +31,9 @@ ppn2.fit(X_train_std, y_train)
 y_pred = ppn.predict(X_test_std)  # Predict the data.
 y_pred2 = ppn2.predict(X_test_std)
 print (y_test != y_pred2).sum()
+print sum(y_test!=y_pred2)
 print (y_test != y_pred).sum()
+
 
 # Plot the decision surface
 import sys
