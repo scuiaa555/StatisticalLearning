@@ -3,7 +3,7 @@ This repo contains all the implementations of my study and research that are rel
 
 Mainly Python.
 
-Using linear regression to build the risk model for stock market is a good start. Let me try it first.
+Linear regression is finishes.
 
 Perceptron, logistic regresion, SVM, KNN is finished.
 The next step is Neural Network.
