@@ -9,4 +9,4 @@ Perceptron, logistic regresion, SVM, KNN is finished.
 
 The next step is Neural Network.
 
-Manifold learning.
+Manifold learning starts.
