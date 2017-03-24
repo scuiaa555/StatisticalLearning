@@ -11,4 +11,4 @@ The next step is Neural Network.
 
 Manifold learning starts.
 
-Hope it works.
+Hope it works. Ah...
